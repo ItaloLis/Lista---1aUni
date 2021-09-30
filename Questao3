@@ -1,0 +1,26 @@
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+   
+    int num;
+
+    Console.WriteLine("Escreva um número");
+    num = int.Parse(Console.ReadLine());
+
+    double raiznum = Math.Sqrt(num);
+    double num2 = Math.Pow(num, 2);
+    
+    if (num > 0) {
+      Console.Write("A raiz quadrada do número é igual a: ");
+      Console.WriteLine(string.Format("{0:0.##}", raiznum));
+    }
+    else {
+      Console.Write("Esse número elevado a potência de 2 é igual a: ");
+      Console.WriteLine(num2);
+    }
+
+  }
+
+  
+}
