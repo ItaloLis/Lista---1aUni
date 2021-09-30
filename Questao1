@@ -1,0 +1,15 @@
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+    double fahrenheit = 0;
+    double celsius = 0;
+            
+    celsius = double.Parse(Console.ReadLine());
+            
+    fahrenheit = celsius * 1.8 + 32;
+            
+    Console.WriteLine(fahrenheit);
+
+  }
+}
