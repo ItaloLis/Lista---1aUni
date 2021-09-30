@@ -1,0 +1,18 @@
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+    double alturaDegrau, alturaEscada;
+
+    Console.WriteLine("Digite a altura dos degrais?");
+    alturaDegrau = double.Parse(Console.ReadLine());
+
+    Console.WriteLine("Digite a altura que você deseja subir:");
+    alturaEscada = double.Parse(Console.ReadLine());
+
+    double quantDegrais = alturaEscada / alturaDegrau;
+
+    Console.WriteLine("Você deverá subir " + Math.Round(quantDegrais) + " degrais.");
+
+  }
+}
