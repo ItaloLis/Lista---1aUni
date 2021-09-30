@@ -1,0 +1,25 @@
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+    double preco, lucro, imposto;
+
+    Console.WriteLine("Preço de fábrica do carro:");
+    preco = double.Parse(Console.ReadLine());
+
+    Console.WriteLine("Percentual de lucro do distribuidor:");
+    lucro = double.Parse(Console.ReadLine());
+
+    Console.WriteLine("Percentual de impostos:");
+    imposto = double.Parse(Console.ReadLine());
+    //letra a:
+    lucro = (lucro/100)*preco;
+    //letra b:
+    imposto = (imposto/100)*preco;
+    //letra c: 
+    preco += (lucro + imposto);
+
+    Console.WriteLine("Total = " + string.Format("{0:0.##}", preco));
+
+  }
+}
