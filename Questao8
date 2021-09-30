@@ -1,0 +1,20 @@
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+    double salMinimo, horas;
+
+    Console.WriteLine("Digite o número de horas trabalhadas:");
+    horas = Double.Parse(Console.ReadLine());
+
+    Console.WriteLine("Digite o valor do salário mínimo:");
+    salMinimo = Double.Parse(Console.ReadLine());
+
+    double salBruto = (salMinimo/2) * horas;
+    double imposto = (3*salBruto)/100;
+    double salTotal = salBruto - imposto;
+
+    Console.WriteLine("Seu salário total a receber é R" + salTotal.ToString("C"));
+
+  }
+}
