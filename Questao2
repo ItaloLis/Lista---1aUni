@@ -1,0 +1,27 @@
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+
+    double salario;
+		double valorHora;
+		int aulas;
+		double inss;
+		double salarioSemDesconto;
+
+		Console.WriteLine("Qual o valor da hora por aula?");
+		valorHora = double.Parse(Console.ReadLine());
+
+		Console.WriteLine("Qual o número de aulas dadas?");
+		aulas = int.Parse(Console.ReadLine());
+
+		Console.WriteLine("Qual a porcentagem de desconto do INSS?");
+		inss = double.Parse(Console.ReadLine());
+
+		salarioSemDesconto = valorHora * aulas;
+		salario = salarioSemDesconto - (salarioSemDesconto * (inss/100));
+
+		Console.WriteLine("O valor do seu salário é R" + salario.ToString("C"));
+
+  }
+}
