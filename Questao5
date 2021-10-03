@@ -10,10 +10,13 @@ class Program {
     Console.WriteLine("Digite o ano atual:");
     anoAtual = int.Parse(Console.ReadLine());
 
+    //a)
     int idade = (anoAtual - anoNasc);
     Console.WriteLine("Você tem " + idade + " anos.");
 
+    //b)
     int idade2 = (2022 - anoNasc);
     Console.WriteLine("Em 2022, você terá " + idade2 + " anos.");
+    
   }
 }
