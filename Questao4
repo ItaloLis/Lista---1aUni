@@ -10,7 +10,8 @@ class Program {
 
     double areaCirculo = (pi * Math.Pow(raio, 2));
 
-    Console.Write("A área do círculo é de: ");
+    Console.Write("A área do círculo é igual a: ");
     Console.WriteLine(string.Format("{0:0.##}", areaCirculo));
+    
   }
 }
