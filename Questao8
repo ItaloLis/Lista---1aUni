@@ -11,7 +11,7 @@ class Program {
     salMinimo = Double.Parse(Console.ReadLine());
 
     double salBruto = (salMinimo/2) * horas;
-    double imposto = (3*salBruto)/100;
+    double imposto = 0.03 * salBruto;
     double salTotal = salBruto - imposto;
 
     Console.WriteLine("Seu salário total a receber é R" + salTotal.ToString("C"));
