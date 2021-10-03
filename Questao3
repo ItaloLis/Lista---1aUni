@@ -3,10 +3,10 @@ using System;
 class Program {
   public static void Main (string[] args) {
    
-    int num;
+    double num;
 
     Console.WriteLine("Escreva um número");
-    num = int.Parse(Console.ReadLine());
+    num = double.Parse(Console.ReadLine());
 
     double raiznum = Math.Sqrt(num);
     double num2 = Math.Pow(num, 2);
